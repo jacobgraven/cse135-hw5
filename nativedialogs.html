@@ -13,69 +13,7 @@
     <button id="alert-button">Alert</button>
     <button id="confirm-button">Confirm</button>
     <button id="prompt-button">Prompt</button>
-    <button id="safe-prompt-button"></button>
-      <html>
-
-      <head>
-        <script src="/node_modules/dompurify/dist/purify.js"></script>
-      </head>
-
-      <body>
-        <header>
-          <h1>Simple Dialogs</h1>
-        </header>
-        <main>
-          <button id="alert-button">Alert</button>
-          <button id="confirm-button">Confirm</button>
-          <button id="prompt-button">Prompt</button>
-          <button id="safe-prompt-button" onclick="cleanOutput()">Safer Prompt</button>
-          <hr />
-          <output id="output"></output>
-          <script>
-            alertButton = document.getElementById("alert-button");
-            confirmButton = document.getElementById("confirm-button");
-            promptButton = document.getElementById("prompt-button");
-            safePrompButton = document.getElementById("safe-prompt-button");
-
-            output = document.getElementById("output");
-
-            /* Alert */
-            alertButton.addEventListener("click", () => { alert("Whats up! :)"); });
-
-            /* Confirm */
-            confirmButton.addEventListener("click", () => {
-              let returnValue = confirm("Confirm choice?");
-              output.value = `Confirm result: ${returnValue}`;
-              // output.value = "The value returned by the confirm method is: " + returnValue;
-            });
-
-            /* Prompt */
-            promptButton.addEventListener("click", () => {
-              let promptValue = prompt("How old are you?", "");
-              if (promptValue == null || promptValue == "") {
-                output.value = "User didn't enter anything";
-              } else {
-                output.innerHTML = `Prompt result: ${promptValue}`
-                // promptOutput.value = "The value returned by the prompt method is: " + promptValue;
-                // promptOutput.value = `The value returned by the prompt method is: ${promptValue}`;
-              }
-            });
-            /*Safe Prompt */
-            safePrompButton.addEventListener("click", () => {
-              let promptValue = prompt("What is the meaning of life?", "");
-              let cleanValue = DOMPurify.sanitize(promptValue);
-              if (cleanValue == null || cleanValue == "") {
-                output.value = "User didn't enter anything";
-              } else {
-                output.innerHTML = `Prompt result: ${cleanValue}`
-              }
-            });
-          </script>
-        </main>
-      </body>
-
-      </html>onclick="cleanOutput()">Safer Prompt
-    </button>
+    <button id="safe-prompt-button" onclick="cleanOutput()">Safer Prompt</button>
     <hr />
     <output id="output"></output>
     <script>
