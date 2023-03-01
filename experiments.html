@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="Jacob Graven" />
+  <meta name="description" content="Jacob Graven's experimental play area" />
+  <link rel="icon" href="./media/images/favicon.ico?" type="image/x-icon" />
+  <title>J. Graven | Experiments</title>
+</head>
+
+<body>
+  <header>
+    <h1><span>Experiments</span></h1>
+    <nav>
+      <a href="./index.html">Home</a> |
+      <a href="#">Experiments</a>
+    </nav>
+  </header>
+
+  <main>
+    <template>
+      <p>Invisible Stuff! Maybe I can do something cool later...</p>
+    </template>
+
+    <section id="experiments">
+      <h2>Welcome to my experiments and playground page!</h2>
+      <div>
+        <code>
+          if(you == cool && you == awesome) {
+            renderPage();
+          }
+        </code>
+
+        <pre>Woah the page definetely loaded because of you! Congrats!                                                (don't get rick rolled lel)</pre>
+      </div>
+
+      <section id="rickroll">
+        <h3>Rickroll Button</h3>
+        <button onclick="window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';">
+          you have been warned!
+        </button>
+      </section>
+
+      <section id="video-audio-demo">
+        <h3>Video and Audio</h3>
+        <h4>Audio</h4>
+        <audio controls>
+          <source src="./media/audio/sample-audio.mp3" type="audio/mp3" />
+        </audio>
+        <h4>Video</h4>
+        <video width=500 height=250 controls>
+          <source src="./media/videos/sample-video.mp4" type="video/mp4" />
+        </video>
+
+        <section id="iframe">
+          <h2><code>iframe</code> Examples</h2>
+          <h3>Example Wikipedia iFrame</h3>
+          <iframe width=500 height=250 src="https://en.wikipedia.org/wiki/Frenetic_random_activity_periods"
+            title="zoomies (cat term) wikipedia article"></iframe>
+
+          <h3>Example Youtube iFrame</h3>
+          <iframe width=500 height=250 src="https://www.youtube.com/embed/L3tsYC5OYhQ" title="silly cat video"
+            allowfullscreen></iframe>
+        </section>
+      </section>
+
+      <p>What a great cat video. Now heres a cool list of my cats in order of their ages!</p>
+      <ol>
+        <li>Steve
+          <ul>
+            <li>Tuxedo</li>
+            <li>Extremely photogenic</li>
+          </ul>
+        </li>
+        <li>Cam
+          <ul>
+            <li>Tuxedo</li>
+            <li>Antisocial, bullies Cleo :(</li>
+          </ul>
+        </li>
+        <li>Cleo
+          <ul>
+            <li>Calico</li>
+            <li>Cuddly little baby</li>
+          </ul>
+        </li>
+      </ol>
+      <br />
+      <section id="table">
+        <h3>Table Example</h3>
+        <!--Validation Error caused below because of obsolete attribute. Supposed to use CSS instead (but I can't because of homework constraint)-->
+        <table border=1>
+          <caption>Table of My Cats!</caption>
+          <!--Style used to show col function-->
+          <colgroup>
+            <col span="3" style="background-color:aqua">
+          </colgroup>
+          <tr>
+            <th>Cat</th>
+            <th>Coat</th>
+            <th>Skills</th>
+          </tr>
+          <tr>
+            <td>Steve</td>
+            <td>Tuxedo</td>
+            <td>Cat Stuff</td>
+          </tr>
+        </table>
+      </section>
+      <br />
+      <section id="canvas-experiment">
+        <h3>Canvas experiments</h3>
+        <figure>
+          <canvas id="table-flipper" width="600" height="50">
+            <script>
+              var canvas = document.getElementById("table-flipper");
+              var logo = canvas.getContext("2d");
+              logo.font = "50px Cambria";
+              logo.fillText("(╯°□°)╯︵ ┻━┻", 0, 40);
+            </script>
+          </canvas>
+          <figcaption>Fig Caption - (╯°□°)╯︵ ┻━┻ Made with canvas tag~!</figcaption>
+        </figure>
+      </section>
+
+      <section id="svg-experiment">
+        <h3>SVG experiments</h3>
+        <svg width="200" height="100">
+          <rect width="200" height="100" fill="green"/>
+          <circle cx="60" cy="60" r="50" fill="blue" />
+        </svg>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <hr />
+    <p>&copy; 2023 Jacob Graven</p>
+    <ul>
+      <li><a href="https://github.com/jacobgraven">Github</a></li>
+      <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">LinkedIn</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

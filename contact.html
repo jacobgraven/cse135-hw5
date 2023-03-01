@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="Jacob Graven" />
+  <meta name="description" content="Jacob Graven's experimental play area" />
+  <link rel="icon" href="./media/images/favicon.ico?" type="image/x-icon" />
+
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <title>J. Graven | Home</title>
+</head>
+
+<body>
+  <header>
+    <h1>Contact Me!</h1>
+    <nav id="navbar">
+      <a href="./index.html">Home</a>
+      <a href="./career.html">Career</a>
+      <a href="./projects.html">Projects</a>
+      <a href="#">Contact</a>
+      <a href="./experiments.html">Experiments</a>
+    </nav>
+  </header>
+  <main>
+    <section id="contact-section">
+      <h2>Contact Me</h2>
+      <p>
+        In order to send me a message, inquiry, joke, anything at all, please refer to the form below! Note to TA: this
+        form lacks lots of "good" content/fields and will be updated as the development continues!
+      </p>
+      <form>
+        <fieldset>
+          <legend>Identifying Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="name..." required="required">
+          <label for="email">E-mail:</label>
+          <input type="text" id="email" name="email" placeholder="email..." required="required">
+        </fieldset>
+
+        <fieldset>
+          <legend>Subject Matter</legend>
+          <label for="subject">Choose a subject:</label>
+          <select id="subject" name="subject">
+            <optgroup label="Professional Inquiries">
+              <option value="inquiry-job">Job Related Inquiries</option>
+              <option value="inquiry-project">Project Related Inquiries</option>
+            </optgroup>
+            <optgroup label="Personal Inquiries">
+              <option value="personal-question">Personal Question</option>
+              <option value="personal-joke">Joke</option>
+              <option value="personal-other">Other</option>
+            </optgroup>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Cats (Placeholder)</legend>
+          <label for="cat">Choose a cat name:</label>
+          <input list="cats" id="cat" name="cat">
+          <datalist id="cats">
+            <option value="steve">Steve</option>
+            <option value="cleo">Cleo</option>
+            <option value="cam">Cam</option>
+          </datalist>
+        </fieldset>
+
+        <fieldset>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="..." required="required"></textarea>
+          <input type="submit" value="Send Message!">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p>&copy; 2023 Jacob Graven</p>
+    <ul>
+      <li><a href="https://github.com/jacobgraven">Github</a></li>
+      <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">LinkedIn</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
