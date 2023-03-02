@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="/node_modules/dompurify/dist/purify.js"></script>
     <script src="customdialogs.js" type="module"></script>
 </head>
 
@@ -20,7 +21,7 @@
         <dialog id="alert-dialog">
             <p>My Custom Alert!</p>
             <form method="dialog">
-                <button id="alert-button">OK</button>
+                <button id="alert-ok">OK</button>
             </form>
         </dialog>
 
@@ -28,8 +29,8 @@
         <dialog id="confirm-dialog">
             <p>Confirm choice?</p>
             <form method="dialog">
-                <button id="confirm-choice">Confirm</button>
-                <button id="cancel-choice">Cancel</button>
+                <button id="confirm-accept">Confirm</button>
+                <button id="confirm-decline">Cancel</button>
             </form>
         </dialog>
 
@@ -38,7 +39,7 @@
             <p>What is your favorite beer?</p>
             <form method="dialog">
                 <input type="text" id="prompt-input">
-                <button id="submit-choice">Submit</button>
+                <button id="submit-prompt">Submit</button>
                 <button id="cancel-prompt">Cancel</button>
             </form>
         </dialog>

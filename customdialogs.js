@@ -19,8 +19,8 @@ confirmButton.addEventListener("click", () => {
     output.innerHTML = "";
     confirmDialog.showModal();
 
-    const confirmChoice = document.getElementById("confirm-choice");
-    const cancelChoice = document.getElementById("cancel-choice");
+    const confirmChoice = document.getElementById("confirm-accept");
+    const cancelChoice = document.getElementById("confirm-decline");
     let returnValue;
 
     confirmChoice.addEventListener("click", () => {
@@ -37,15 +37,17 @@ promptButton.addEventListener("click", () => {
     output.innerHTML = "";
     promptDialog.showModal();
 
-    const submitChoice = document.getElementById("submit-choice");
+    const submitChoice = document.getElementById("submit-prompt");
     const cancelChoice = document.getElementById("cancel-prompt");
     const textField = document.getElementById("prompt-input");
+    textField.value = "";
     let returnValue;
 
     submitChoice.addEventListener("click", () => {
         returnValue = textField.value;
-        if(returnValue != "") {
-            output.innerHTML = `Prompt result: ${returnValue}`;
+        let cleanValue = DOMPurify.sanitize(returnValue);
+        if(cleanValue != "") {
+            output.innerHTML = `Prompt result: ${cleanValue}`;
         } else {
             output.innerHTML = `User didn't submit anything`;
         }
