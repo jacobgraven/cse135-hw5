@@ -16,14 +16,30 @@
         <hr />
         <output id="output"></output>
 
-        <!--HTML Dialog Definitions-->
-
         <!--Alert Dialog-->
         <dialog id="alert-dialog">
-            <p>Kill 12 random babies?</p>
+            <p>My Custom Alert!</p>
             <form method="dialog">
-                <button value="confirm" id="confirm-choice" onclick="">Confirm</button>
-                <button value="cancel" id="cancel-choice">Cancel</button>
+                <button id="alert-button">OK</button>
+            </form>
+        </dialog>
+
+        <!--Confirm Dialog-->
+        <dialog id="confirm-dialog">
+            <p>Confirm choice?</p>
+            <form method="dialog">
+                <button id="confirm-choice">Confirm</button>
+                <button id="cancel-choice">Cancel</button>
+            </form>
+        </dialog>
+
+        <!--Prompt Dialog-->
+        <dialog id="prompt-dialog">
+            <p>What is your favorite beer?</p>
+            <form method="dialog">
+                <input type="text" id="prompt-input">
+                <button id="submit-choice">Submit</button>
+                <button id="cancel-prompt">Cancel</button>
             </form>
         </dialog>
     </main>

@@ -25,7 +25,12 @@
       output = document.getElementById("output");
 
       /* Alert */
-      alertButton.addEventListener("click", () => { alert("Whats up! :)"); });
+      alertButton.addEventListener("click", () => { 
+        output.innerHTML = "";
+        setTimeout(function() {
+          alert("Whats up!"); 
+        }, 0);
+      });
 
       /* Confirm */
       confirmButton.addEventListener("click", () => {
