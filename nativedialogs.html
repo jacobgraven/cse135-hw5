@@ -13,7 +13,7 @@
     <button id="alert-button">Alert</button>
     <button id="confirm-button">Confirm</button>
     <button id="prompt-button">Prompt</button>
-    <button id="safe-prompt-button" onclick="cleanOutput()">Safer Prompt</button>
+    <button id="safe-prompt-button">Safer Prompt</button>
     <hr />
     <output id="output"></output>
     <script>
@@ -29,31 +29,39 @@
 
       /* Confirm */
       confirmButton.addEventListener("click", () => {
-        let returnValue = confirm("Confirm choice?");
-        output.value = `Confirm result: ${returnValue}`;
-        // output.value = "The value returned by the confirm method is: " + returnValue;
+        output.innerHTML = "";
+        setTimeout(function () {
+          let returnValue = confirm("Confirm choice");
+          output.innerHTML = `Confirm dialog result: ${returnValue}`;
+        }, 0);
       });
 
       /* Prompt */
       promptButton.addEventListener("click", () => {
-        let promptValue = prompt("How old are you?", "");
-        if (promptValue == null || promptValue == "") {
-          output.value = "User didn't enter anything";
-        } else {
-          output.innerHTML = `Prompt result: ${promptValue}`
-          // promptOutput.value = "The value returned by the prompt method is: " + promptValue;
-          // promptOutput.value = `The value returned by the prompt method is: ${promptValue}`;
-        }
+        output.innerHTML = "";
+        setTimeout(function () {
+          let promptValue = prompt("How old are you?", "");
+          if (promptValue == null || promptValue == "") {
+            output.innerHTML = "User didn't enter anything.";
+          } else {
+            output.innerHTML = `Prompt dialog result: ${promptValue}`
+            // output.value = "The value returned by the prompt method is: " + promptValue;
+          }
+        }, 0);
       });
+
       /*Safe Prompt */
       safePrompButton.addEventListener("click", () => {
-        let promptValue = prompt("What is the meaning of life?", "");
-        let cleanValue = DOMPurify.sanitize(promptValue);
-        if (cleanValue == null || cleanValue == "") {
-          output.value = "User didn't enter anything";
-        } else {
-          output.innerHTML = `Prompt result: ${cleanValue}`
-        }
+        output.innerHTML = "";
+        setTimeout(function() {
+          let promptValue = prompt("What is the meaning of life?", "");
+          let cleanValue = DOMPurify.sanitize(promptValue);
+          if (cleanValue == null || cleanValue == "") {
+            output.innerHTML = "User didn't enter anything.";
+          } else {
+            output.innerHTML = `Prompt  dialog result: ${cleanValue}`
+          }
+        }, 0);
       });
     </script>
   </main>

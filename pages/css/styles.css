@@ -1,0 +1,163 @@
+:root {
+    /* More Variables Here! */
+    --primary-color: #000;
+    --secondary-color: #FFF;
+}
+
+/* @font-face {
+https://github.com/jacobgraven/cse134-hw4.git    src: local("Quick Kiss"),
+        url('/resources/font/QuickKissPersonalUse-PxlZ.ttf') format(ttf)l
+} */
+
+* {
+    /* Apply imported font to the root */
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 1em;
+    font-style: unset;
+    text-decoration: unset;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    font-size: 10vh;
+    font-style: oblique;
+    padding-top: 2.5vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    font-weight: normal;
+    ;
+}
+
+
+body {
+    background-color: gainsboro;
+}
+
+#navbar {
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-shadow: 1px 2px darkgray;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* a:active {
+    background-color: green;
+} */
+
+a:active {
+    color: darkgrey;
+    background-color: rgb(95, 92, 92);
+}
+
+a:hover {
+    background-color: rgb(95, 92, 92);
+    color: rgb(180, 177, 177);
+    transition: color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+
+/* a::selection {
+    background-color: purple;
+} */
+
+a[href="#"] {
+    background-color: rgb(180, 177, 177);
+    background-blend-mode: color;
+}
+
+a {
+    min-width: 10vw;
+    text-align: center;
+}
+
+footer > a:active {
+    background-color: white;
+}
+
+/* 
+header {
+    display: flex;
+    flex-direction: row;
+    column-gap: 400px;
+    justify-content: center;
+    align-items: center;
+    border: solid black 3px;
+    border-radius: 12px;
+    max-width: 50%;
+} */
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.1%
+    
+}
+
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+p {
+    max-width: 50%;
+    color: var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 50%;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+#contact-section {
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+}
+
+footer > p {
+    font-family: monospace;
+}
+
+footer {
+    font-family: monospace;
+}
+
+
+/* Inspiration/Info: https://codepen.io/P1N2O/pen/pyBNzX */
+/* Can go to experiments! */
+/* body {
+    background: linear-gradient(-45deg, #e66465, green, blue, #9198e5);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
