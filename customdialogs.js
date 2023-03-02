@@ -55,5 +55,4 @@ promptButton.addEventListener("click", () => {
     cancelChoice.addEventListener("click", () => {
         output.innerHTML = `User didn't submit anything`;
     });
-
 });
