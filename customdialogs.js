@@ -1,14 +1,28 @@
+/* Dialog Templates */
 const alertDialog = document.getElementById("alert-dialog");
 const confirmDialog = document.getElementById("confirm-dialog");
 const promptDialog = document.getElementById("prompt-dialog");
 
+/* Activate Buttons */
 const alertButton = document.getElementById("custom-alert");
 const confirmButton = document.getElementById("custom-confirm");
 const promptButton = document.getElementById("custom-prompt");
 
+/* Output Tag */
 const output = document.getElementById("output");
 
 /* Event Listeners */
+confirmDialog.addEventListener("keydown", (event) => {
+    if(event.key == "Escape") {
+        output.innerHTML = `Confirm result: false`;
+    }
+});
+
+promptDialog.addEventListener("keydown", (event) => {
+    if(event.key == "Escape") {
+        output.innerHTML = `User didn't submit anything`;
+    }
+});
 
 alertButton.addEventListener("click", () => {
     output.innerHTML = "";
