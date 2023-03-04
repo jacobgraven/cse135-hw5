@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="./node_modules/dompurify/dist/purify.js"></script>
     <script src="blog.js" type="module"></script>
 </head>
 
@@ -9,26 +10,29 @@
     <header>
         <h1>CRUD Blog</h1>
     </header>
-
     <main>
+        <button id="create-button">Create Post</button>
+        <br />
+        <output id="output-info"></output>
+        <hr />
+        <div id="post-container"></div>
+
+
         <dialog id="create-dialog">
             <form method="dialog">
                 <p>Post Title</p>
-                <input type="text">
+                <input id="input-title" type="text">
 
                 <p>Post Date</p>
-                <input type="date">
+                <input id="input-date" type="date">
 
                 <p>Post summary</p>
-                <input type="text" style="height:50px; width:200px">
+                <input id="input-text" type="text">
                 <br />
-                <button>Create</button>
-                <button>Cancel</button>
-
+                <button id="submit-dialog">Create</button>
+                <button id="cancel-dialog">Cancel</button>
             </form>
         </dialog>
-
-        <button id="create-button">Create Post</button>
     </main>
 </body>
 
