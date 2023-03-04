@@ -112,7 +112,6 @@ function createPost(postObj) {
     postContainer.append(newPost);
     posts.push(postObj);
 
-    // TODO?
     localStorage.setItem("localPosts", JSON.stringify(posts));
 
 
