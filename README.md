@@ -7,9 +7,11 @@
 
 ## Link
 
-## Notes
+- https://stellular-sawine-dec81e.netlify.app/
 
-[test](https://github.com/jacobgraven/cse134-hw4)
+## Helpful Notes
+
+Please keep in mind that I did not complete HW3 due to personal circumstances and life problems. The CSS for my site is still very incomplete, but it is a slight improvement from nothing!
 
 
 
