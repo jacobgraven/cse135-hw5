@@ -22,10 +22,10 @@ window.addEventListener("load", () => {
     initPage();
 });
 
-function initPage() { 
-    if(localStorage.getItem("localPosts") != null) {
+function initPage() {
+    if (localStorage.getItem("localPosts") != null) {
         let storedPosts = JSON.parse(localStorage.getItem("localPosts"));
-        for(let i = 0; i < storedPosts.length; i++) {
+        for (let i = 0; i < storedPosts.length; i++) {
             createPost(storedPosts[i]);
         }
     }
