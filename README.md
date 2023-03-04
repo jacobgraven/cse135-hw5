@@ -15,7 +15,7 @@ Please keep in mind that I did not complete HW3 due to personal circumstances an
 
 ### DOMPurify
 
-When I deployed the site, I had some issues getting DOMPurify to work. I eventually got it to work using a CDN import link, but I decided to keep both script imports so there may be an error in the console.
+When I deployed the site, I had some issues getting DOMPurify to work from the node_modules folder. I eventually got it to work using a CDN import link, so I commented out the other script tag.
 
 ### Custom Dialogs
 
