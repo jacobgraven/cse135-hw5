@@ -1,0 +1,13 @@
+#projects-secion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    padding-bottom: none;
+}
+
+details {
+    padding-bottom: 20px;
+}
