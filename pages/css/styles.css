@@ -4,11 +4,6 @@
     --secondary-color: #FFF;
 }
 
-/* @font-face {
-https://github.com/jacobgraven/cse134-hw4.git    src: local("Quick Kiss"),
-        url('/resources/font/QuickKissPersonalUse-PxlZ.ttf') format(ttf)l
-} */
-
 * {
     /* Apply imported font to the root */
     font-family: "Raleway", Arial, sans-serif;
@@ -28,7 +23,6 @@ h1 {
     font-weight: normal;
     ;
 }
-
 
 body {
     background-color: gainsboro;
