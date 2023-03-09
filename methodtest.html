@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Method Testing</title>
+</head>
+
+<body>
+    <header>
+        <style>
+            form {
+                border: 3px solid black;
+                border-radius: 12px;
+                max-width: 30%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 5px;
+            }
+
+            textarea {
+                min-height: 100px;
+            }
+        </style>
+
+        <script>
+
+        </script>
+    </header>
+    <main>
+        <form action="" method="post">
+            <label for="id">Record ID:</label>
+            <input type="text" id="id" name="id">
+            <br />
+            <label for="article_name">Article Name:</label>
+            <input type="text" id="article_name" name="article_name">
+            <br />
+            <label for="article_body">Article Body:</label>
+            <textarea id="article_body" name="article_body" value=""></textarea>
+
+            <button name="postBtn" id="postBtn" value="post">Post</button>
+            <button name="getBtn" id="getBtn" value="get">Get</button>
+            <button name="putBtn" id="putBtn" value="put">Put</button>
+            <button name="deleteBtn" id="deleteBtn" value="delete">Delete</button>
+        </form>
+
+    </main>
+</body>
+
+</html>
